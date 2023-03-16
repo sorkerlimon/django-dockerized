@@ -24,46 +24,6 @@
 # volumes:
 #   db_data:
 
-
-
-
-# version: "3"
-
-# services:
-#   db:
-#     image: mysql:latest
-#     environment:
-#       MYSQL_DATABASE: django
-#       MYSQL_USER: root
-#       MYSQL_PASSWORD: limon@123
-#       MYSQL_ROOT_PASSWORD: limon@123
-#     volumes:
-#       - db_data:/var/lib/mysql
-
-#   web:
-#     build: .
-#     volumes:
-#       - .:/app
-#     depends_on:
-#       - db
-#     ports:
-#       - "8000:8000"  # map host port 8080 to container port 8000
-
-#   nginx:
-#     build: .
-#     ports:
-#       - "80:80"
-#     depends_on:
-#       - web
-
-# volumes:
-#   db_data:
-
-
-# docker-compose down
-# docker-compose up -d --build
-
-
 version: "3"
 
 services:
