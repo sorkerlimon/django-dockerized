@@ -47,7 +47,7 @@ RUN python manage.py migrate
 RUN python manage.py collectstatic --noinput
 
 # Create a superuser
-RUN echo "from django.contrib.auth.models import User; User.objects.create_superuser('sorkerlimon1', 'sorkerlimon19@gmail.com', 'limon@123')" | python manage.py shell
+RUN echo "from django.contrib.auth.models import User; User.objects.create_superuser('limonsorker2', 'sorkerlimon19@gmail.com', 'limon@123')" | python manage.py shell
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
